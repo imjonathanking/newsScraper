@@ -2,7 +2,7 @@
 var mongoose = require("mongoose");
 
 // Setting up connection to Mongoose
-mongoose.connect("mongodb://localhost/articleScraper", { useNewUrlParser: true });
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/articleScraper", { useNewUrlParser: true });
 
 // Article.js and Comment.js
 var db = require("../models");
