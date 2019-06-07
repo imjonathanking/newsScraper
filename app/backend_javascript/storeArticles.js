@@ -1,13 +1,13 @@
 // Mongoose npm package
 var mongoose = require("mongoose");
 
-mongodb = process.env.MONGODB_URI
+var mongodb = process.env.MONGODB_URI
 
 console.log("---------------------------------------------------------------------")
 console.log(mongodb);
 
 // Setting up connection to Mongoose
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/articleScraper", { useNewUrlParser: true });
+mongoose.connect(mongodb || "mongodb://localhost/articleScraper", { useNewUrlParser: true });
 
 
 // Article.js and Comment.js
