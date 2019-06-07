@@ -5,6 +5,8 @@ function apiRoutes(app){
     app.get("/api/allArticles", function(req, res){
         mongoFunctions.findAll(function(response){
             res.json(response);
+            console.log("Response: ---------------------------------------------------")
+            console.log(response);
         })
     })
 
