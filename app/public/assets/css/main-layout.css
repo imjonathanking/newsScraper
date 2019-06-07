@@ -1,0 +1,110 @@
+body{
+    /* Global conditions */
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    
+    /* Sizing */
+    height: 100vh;
+    max-height: 100vh;
+}
+
+.layout{
+    height: 100vh;
+
+    /* Setting up CSS Grid */
+    display: grid;
+    grid-template-rows: [navbar] 80px [body] auto;
+}
+
+.navbar{
+    background-color: rgb(0, 80, 12);
+
+    /* Setting up CSS Grid */
+    grid-row-start: navbar;
+    display: grid;
+    grid-template-columns: [page-title] 20% [nav] auto;
+}
+
+.page-title{
+    /* Positioning */
+    grid-column-start: page-title;
+
+    /* Setup for child elements */
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    color: white;
+    font-size: 30px;
+}
+
+.content-flex-wrapper{
+    /* Setup for child elements */
+    display: flex;
+    justify-content: center;
+
+    /* Styling */
+    background-image: url("../images/full-bloom.png")
+}
+
+#allArticles{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content{
+    /* Sizing & Positioning */
+    margin-top: 80px;
+    height: 80%;
+    width: 80%;
+    padding: 20px 0px;
+
+    /* Setup for child elements */
+    display: flex;
+    justify-content: center;
+
+    /* Styling */
+    background-image: url("../images/prism.png")
+}
+
+.article-div{
+    border: 6px solid #00489B;
+
+
+    /* Positioning & Sizing */
+    width: 80%;
+    margin: 30px 0px;
+    padding: 10px;
+
+    /* Styling */
+    border-radius: 10px;
+    background-color: white;
+
+    /* Setup for child elements */
+    text-align: center;
+}
+
+.article-title{
+    font-size: 20px;
+}
+
+.userAction > *{
+    margin: 0px 10px;
+}
+
+.commentDiv{
+    /* Positioning */
+    margin-top: 10px;
+
+    /* Styling */
+    background-color: #88B2E3;
+}
+
+.commentDiv > *{
+    padding: 10px 0px;
+}

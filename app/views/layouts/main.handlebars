@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{!-- jQuery --}}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    {{!-- Local CSS layout --}}
+    <link rel="stylesheet" href="assets/css/main-layout.css">
+    {{!-- Google Fonts --}}
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <title>Handlebars Template</title>
+</head>
+<body>
+    <div class="layout">
+        <div class="navbar">
+            <div class="page-title">
+                <div class="title">
+                    Queen City Courier
+                </div>
+            </div>
+        </div>
+        <div class="content-flex-wrapper">
+            <div class="content">
+                {{{body}}}
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/logic.js"></script>
+</body>
+</html>
