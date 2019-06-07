@@ -1,3 +1,5 @@
+console.log("inside logic.js");
+
 function getAllArticles(){
     $.getJSON("/api/allArticles", function(data){
         renderArticles(data);
