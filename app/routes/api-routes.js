@@ -1,5 +1,12 @@
 var db = require("../models");
 
+// Mongoose npm package
+var mongoose = require("mongoose");
+var mongodb = process.env.MONGODB_URI
+
+// Setting up connection to Mongoose
+mongoose.connect(mongodb || "mongodb://localhost/articleScraper", { useNewUrlParser: true });
+
 function apiRoutes(app){
     app.get("/api/allArticles", function(req, res){
         db.Article.find({}, function(err, docs){

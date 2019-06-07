@@ -3,12 +3,11 @@ var mongoose = require("mongoose");
 
 var mongodb = process.env.MONGODB_URI
 
-console.log("---------------------------------------------------------------------")
-console.log(mongodb);
-
 // Setting up connection to Mongoose
 mongoose.connect(mongodb || "mongodb://localhost/articleScraper", { useNewUrlParser: true });
 
+console.log("---------------------------------------------------------------------")
+console.log(mongodb);
 
 // Article.js and Comment.js
 var db = require("../models");
