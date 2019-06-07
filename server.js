@@ -1,5 +1,5 @@
 //Requiring dependencies------------------------------------------------------------------------||
-const port = process.env.PORT || 3000;
+var PORT = process.env.PORT || 3000;
 
 var path = require("path");
 
