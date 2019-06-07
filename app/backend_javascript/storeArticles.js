@@ -3,6 +3,7 @@ var mongoose = require("mongoose");
 
 mongodb = process.env.MONGODB_URI
 
+console.log("---------------------------------------------------------------------")
 console.log(mongodb);
 
 // Setting up connection to Mongoose
